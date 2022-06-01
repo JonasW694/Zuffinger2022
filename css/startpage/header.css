@@ -1,5 +1,10 @@
 .header {
-    background-color: aqua;
-    width: 95%;
-    height: 50px;
+    height: 5em;
+    width: 98%;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    margin-top: 1em;
+    margin-right: 1%;
+    margin-left: 1%;
 }

@@ -1,4 +1,6 @@
 .body {
-    background-color: aquamarine;
-    background-size: cover;
+    background: #282828;
+    position: relative;
+    height: auto;
+    overflow: hidden;
 }
