@@ -12,6 +12,34 @@ header {
   width: 100%;
   height: 100px;
   background-position: center;
-  background-color: green;
+  background-color: #39992d;
+}
+
+.bgVidHome {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 2em;
+  background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/glacier.jpg) no-repeat center center/cover;
+}
+
+.bgVidHome h1 {
+  display: inline-block;
+}
+
+.bgVidHome:hover h1 {
+  letter-spacing: 25px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 /*# sourceMappingURL=index.css.map */
