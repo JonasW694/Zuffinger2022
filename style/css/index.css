@@ -7,7 +7,7 @@ body {
   padding: 0%;
   background-color: #FFFFFF;
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
 .header {
@@ -20,7 +20,7 @@ body {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header ul {
@@ -39,11 +39,10 @@ body {
   list-style: none;
 }
 
-.header ul li a {
+.header ul a {
   margin: 0 20px;
   color: black;
   letter-spacing: 2px;
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 20px;
   font-weight: 500px;
   -webkit-transition: 0.6s;
@@ -51,38 +50,81 @@ body {
   cursor: pointer;
 }
 
-.header.sticky {
-  width: 100%;
+.header.headerdown {
   height: 60px;
   background-color: #39992d;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
-.header.sticky ul {
+.header.headerdown ul {
   top: 3px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
-.header.sticky ul li {
-  display: inline;
-  list-style: none;
-}
-
-.header.sticky ul li a {
-  margin: 0 20px;
+.header.headerdown ul li a {
   color: white;
+}
+
+.header.headerup {
+  height: 100px;
+  background-color: transparent;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.header.headerup ul {
+  top: 22px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.header.headerup ul li a {
+  color: black;
 }
 
 .bgVidHome {
   width: 100%;
   height: auto;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 }
 
-.buttonHeader {
-  position: relative;
+.horizontalscrollcontainer {
+  margin-top: 56%;
+  aspect-ratio: 16/ 9;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.horizontalscrollcontainer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.horizontalscrollcontainer section:nth-of-type(1) {
+  background-color: bisque;
+}
+
+.horizontalscrollcontainer section:nth-of-type(2) {
+  background-color: cadetblue;
+}
+
+.horizontalscrollcontainer section:nth-of-type(3) {
+  background-color: brown;
+}
+
+.horizontalscrollcontainer section:nth-of-type(4) {
+  background-color: coral;
 }
 /*# sourceMappingURL=index.css.map */

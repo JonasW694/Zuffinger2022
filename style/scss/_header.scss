@@ -5,7 +5,7 @@
     justify-content: space-between;
     transition: 0.6s;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     & ul {
         position: relative;
         display: flex;
@@ -13,38 +13,45 @@
         text-align: right;
         float: right;
         right: 4%;
-    }
-    & ul li {
-        display: inline;
-        list-style: none;
-    }
-    & ul li a {
-        margin: 0 20px;
-        color: rgba(0, 0, 0, 1);
-        letter-spacing: 2px;
-        font-family: Tahoma, Verdana, Segoe, sans-serif;
-        font-size: 20px;
-        font-weight: 500px;
-        transition: 0.6s;
-        cursor: pointer;
+        & li {
+            display: inline;
+            list-style: none;
+        }
+        & a {
+            margin: 0 20px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: 500px;
+            transition: 0.6s;
+            cursor: pointer;
+        }
     }
 }
 
-.header.sticky {
-    width: 100%;
+$headertrans:0.8s;
+.header.headerdown {
     height: 60px;
     background-color: #39992d;
-    transition: 1s;
+    transition: $headertrans;
     & ul {
         top: 3px;
-        transition: 1s;
+        transition: $headertrans;
+        & li a {
+            color: rgba(255, 255, 255, 1);
+        }
     }
-    & ul li {
-        display: inline;
-        list-style: none;
-    }
-    & ul li a {
-        margin: 0 20px;
-        color: rgba(255, 255, 255, 1);
+}
+
+.header.headerup {
+    height: 100px;
+    background-color: transparent;
+    transition: $headertrans;
+    & ul {
+        top: 22px;
+        transition: $headertrans;
+        & li a {
+            color: rgba(0, 0, 0, 1);
+        }
     }
 }
