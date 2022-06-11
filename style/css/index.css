@@ -48,6 +48,7 @@ body {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .header.headerdown {
