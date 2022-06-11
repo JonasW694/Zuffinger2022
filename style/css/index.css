@@ -6,7 +6,6 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #FFFFFF;
-  overflow-x: hidden;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
@@ -96,10 +95,18 @@ body {
   margin-top: 56%;
   aspect-ratio: 16/ 9;
   width: 100%;
-  background-color: aquamarine;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .horizontalscrollcontainer section {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,8 +116,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  aspect-ratio: 16/ 9;
   width: 100vw;
-  height: 100vh;
+  scroll-snap-align: start;
 }
 
 .horizontalscrollcontainer section:nth-of-type(1) {
