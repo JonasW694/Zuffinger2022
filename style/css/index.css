@@ -1,8 +1,6 @@
 body {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: contents;
   margin: 0%;
   padding: 0%;
   background-color: #FFFFFF;
@@ -101,6 +99,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overscroll-behavior-inline: contain;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .horizontalscrollcontainer section {
@@ -135,5 +136,10 @@ body {
 
 .horizontalscrollcontainer section:nth-of-type(4) {
   background-color: coral;
+}
+
+.test {
+  background-color: aquamarine;
+  margin-top: 0%;
 }
 /*# sourceMappingURL=index.css.map */

@@ -5,6 +5,8 @@
     scroll-snap-type: x proximity;
     overflow-x: scroll;
     display: flex;
+    overscroll-behavior-inline: contain;
+    position: sticky;
     section {
         flex: none;
         display: flex;
@@ -26,4 +28,9 @@
             background-color: coral;
         }
     }
+}
+
+.test {
+    background-color: aquamarine;
+    margin-top: 0%;
 }
