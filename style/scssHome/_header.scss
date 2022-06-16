@@ -1,0 +1,58 @@
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color: transparent;
+    justify-content: space-between;
+    transition: 0.6s;
+    position: fixed;
+    z-index: 10;
+    & ul {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        top: 22px;
+        text-align: right;
+        right: 4%;
+        & li {
+            list-style: none;
+        }
+        & a {
+            margin: 0 20px;
+            color: rgba(0, 0, 0, 1);
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: 500px;
+            transition: 0.6s;
+            cursor: pointer;
+            text-decoration: none;
+            position: relative;
+        }
+    }
+}
+
+$headertrans:0.8s;
+.header.headerdown {
+    height: 60px;
+    background-color: #39992d;
+    transition: $headertrans;
+    & ul {
+        top: 0;
+        transition: $headertrans;
+        & li a {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.header.headerup {
+    height: 100px;
+    background-color: transparent;
+    transition: $headertrans;
+    & ul {
+        top: 22px;
+        transition: $headertrans;
+        & li a {
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+}
