@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/css/index.css" type="text/css">
-    <script src="js/scroll.js"></script>
+    <script src="./js/scroll.js"></script>
     <title>Witte KNX programmierung</title>
 </head>
 
@@ -31,64 +31,202 @@
             </li>
         </ul>
     </header>
-    <div class="grid-container">
+    <div class="flex-container">
         <div class="homeFirstText">
             <span class="headline">KNX Programmierung</span>
             <p><span class="basicText">Wir programmieren, in der ETS6 Umgebung, Ihr KNX System nach individuellen Wünschen</span></p>
         </div>
-        <div class="slidergrid slider">
+        <div class="slider">
             <div class="slides">
-                <input type="radio" name="radio" id="radio1">
-                <input type="radio" name="radio" id="radio2">
-                <input type="radio" name="radio" id="radio3">
-                <input type="radio" name="radio" id="radio4">
-                <input type="radio" name="radio" id="radio5">
-                <input type="radio" name="radio" id="radio6">
-
-
+                <input type="radio" name="radio" id="radio1" for="switch__indicator" onclick="setcounter(1)">
+                <input type="radio" name="radio" id="radio2" for="switch__indicator" onclick="setcounter(2)">
+                <input type="radio" name="radio" id="radio3" for="switch__indicator" onclick="setcounter(3)">
+                <input type="radio" name="radio" id="radio4" for="switch__indicator" onclick="setcounter(4)">
+                <input type="radio" name="radio" id="radio5" for="switch__indicator" onclick="setcounter(5)">
                 <div class="slide first">
-                    Slide 1 Slide 1 Slide 1 Slide 1
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="blog-card">
+                                    <div class="blog-card__background">
+                                        <div class="card__background--wrapper">
+                                            <div class="card__background--main" style="background-image: url('https://res.cloudinary.com/db5ylobjz/image/upload/c_crop,w_5408,x_0,y_927/v1655550402/KNX%20Website/pexels-binyamin-mellish-106399_ycq0i7.jpg');">
+                                                <div class="card__background--layer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card__head">
+                                        <span class="date__box">
+                                  <span class="date__day">11</span>
+                                        <span class="date__month">JAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="blog-card__info">
+                                        <h5>22 Geräte, 7 Räume, Gira Handy Software, G1 in 3 Räumen</h5>
+                                        <p>
+                                            <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> Jonas Witte</a>
+                                            <a href="#" class="icon-link"><i class="fa fa-comments-o"></i> 2022</a>
+                                        </p>
+                                        <p>Dieses Projekt war mein erstes Projekt. Die Familie war sehr zufrieden und wird sich bei Fehlern bei mir melden.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    Slide 2
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="blog-card">
+                                    <div class="blog-card__background">
+                                        <div class="card__background--wrapper">
+                                            <div class="card__background--main" style="background-image: url('https://res.cloudinary.com/db5ylobjz/image/upload/v1655555383/KNX%20Website/pexels-binyamin-mellish-1396122_ankuno.jpg');">
+                                                <div class="card__background--layer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card__head">
+                                        <span class="date__box">
+                                  <span class="date__day">11</span>
+                                        <span class="date__month">JAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="blog-card__info">
+                                        <h5>35 Geräte, 8 Räume</h5>
+                                        <p>
+                                            <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> Jonas Witte</a>
+                                            <a href="#" class="icon-link"><i class="fa fa-comments-o"></i> 2022</a>
+                                        </p>
+                                        <p>Dieses Projekt war mein zweites Projekt. Die Familie war sehr zufrieden und wird sich bei Fehlern bei mir melden.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    Slide 3
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="blog-card">
+                                    <div class="blog-card__background">
+                                        <div class="card__background--wrapper">
+                                            <div class="card__background--main" style="background-image: url('https://res.cloudinary.com/db5ylobjz/image/upload/v1655555381/KNX%20Website/pexels-expect-best-323772_emv74l.jpg');">
+                                                <div class="card__background--layer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card__head">
+                                        <span class="date__box">
+                                  <span class="date__day">11</span>
+                                        <span class="date__month">JAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="blog-card__info">
+                                        <h5>22 Geräte, 7 Räume, Gira Handy Software, G1 in 3 Räumen</h5>
+                                        <p>
+                                            <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> Jonas Witte</a>
+                                            <a href="#" class="icon-link"><i class="fa fa-comments-o"></i> 2022</a>
+                                        </p>
+                                        <p>Dieses Projekt war mein drittes Projekt. Die Familie war sehr zufrieden und wird sich bei Fehlern bei mir melden.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide backgroundslides">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="blog-card">
+                                    <div class="blog-card__background">
+                                        <div class="card__background--wrapper">
+                                            <div class="card__background--main" style="background-image: url('https://res.cloudinary.com/db5ylobjz/image/upload/v1655555381/KNX%20Website/pexels-luis-yanez-206172_tfngub.jpg');">
+                                                <div class="card__background--layer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card__head">
+                                        <span class="date__box">
+                                  <span class="date__day">11</span>
+                                        <span class="date__month">JAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="blog-card__info">
+                                        <h5>35 Geräte, 8 Räume</h5>
+                                        <p>
+                                            <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> Jonas Witte</a>
+                                            <a href="#" class="icon-link"><i class="fa fa-comments-o"></i> 2022</a>
+                                        </p>
+                                        <p>Dieses Projekt war mein viertes Projekt. Die Familie war sehr zufrieden und wird sich bei Fehlern bei mir melden.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    Slide 4
-                </div>
-                <div class="slide">
-                    Slide 5
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="blog-card">
+                                    <div class="blog-card__background">
+                                        <div class="card__background--wrapper">
+                                            <div class="card__background--main" style="background-image: url('https://res.cloudinary.com/db5ylobjz/image/upload/v1655555382/KNX%20Website/pexels-dianne-226407_jm3zuh.jpg');">
+                                                <div class="card__background--layer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card__head">
+                                        <span class="date__box">
+                                  <span class="date__day">11</span>
+                                        <span class="date__month">JAN</span>
+                                        </span>
+                                    </div>
+                                    <div class="blog-card__info">
+                                        <h5>22 Geräte, 7 Räume, Gira Handy Software, G1 in 3 Räumen</h5>
+                                        <p>
+                                            <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> Jonas Witte</a>
+                                            <a href="#" class="icon-link"><i class="fa fa-comments-o"></i> 2022</a>
+                                        </p>
+                                        <p>Dieses Projekt war mein fünftes Projekt. Die Familie war sehr zufrieden und wird sich bei Fehlern bei mir melden.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="navigation-auto">
-                    <div class="auto-button1"></div>
-                    <div class="auto-button2"></div>
-                    <div class="auto-button3"></div>
-                    <div class="auto-button4"></div>
-                    <div class="auto-button5"></div>
+                    <div class="switch">
+                        <input name="radio" id="one" type="radio" checked/>
+                        <label for="radio1" class="switch__label">1</label>
+                        <input name="radio" id="two" type="radio" />
+                        <label for="radio2" class="switch__label">2</label>
+                        <input name="radio" id="three" type="radio" />
+                        <label for="radio3" class="switch__label">3</label>
+                        <input name="radio" id="four" type="radio" />
+                        <label for="radio4" class="switch__label">4</label>
+                        <input name="radio" id="radiofive" type="radio" />
+                        <label for="radio5" class="switch__label">5</label>
+                    </div>
                 </div>
             </div>
-
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-button"></label>
-                <label for="radio2" class="manual-button"></label>
-                <label for="radio3" class="manual-button"></label>
-                <label for="radio4" class="manual-button"></label>
-                <label for="radio5" class="manual-button"></label>
-            </div>
         </div>
-        <script type="text/javascript">
-            var counter = 1;
-            setInterval(function() {
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if (counter > 5) {
-                    counter = 1;
-                }
-            }, 5000);
-        </script>
-    </div>
+        <div class="footer-basic">
+            <footer>
+                <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="Leistungen.html">Leistungen</a></li>
+                    <li class="list-inline-item"><a href="UeberUns.html">Über uns</a></li>
+                    <li class="list-inline-item"><a href="Kontakt.html">Kontakt</a></li>
+                    <li class="list-inline-item"><a href="Impressum.html">Impressum</a></li>
+                </ul>
+                <p class="copyright">Jonas KNX Programmierung © 2022</p>
+            </footer>
+        </div>
 </body>
 
 </html>

@@ -13,3 +13,16 @@ function headerup() {
         headerup.classList.toggle("headerup", window.scrollY == 0);
     })
 }
+
+let counter = 1;
+
+function setcounter(x) {
+    counter = x;
+}
+setInterval(function() {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 4) {
+        counter = 1;
+    }
+}, 5000);
