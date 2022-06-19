@@ -1,0 +1,61 @@
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 2.2vw;
+    padding: 0%;
+    margin: 0%;
+    background-color: #52a044;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.themebox {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 3%;
+}
+
+.themetextbox {
+    display: flex;
+    word-wrap: nowrap;
+    border-style: solid;
+    width: max-content;
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+}
+
+.productpictures {
+    position: relative;
+    justify-content: center;
+    height: 50vh;
+    width: 45vw;
+    margin-top: 20vh;
+}
+
+.leistungentext {
+    height: 64vh;
+    width: 25vw;
+    margin-right: 7%;
+    margin-top: 15vh;
+}
+
+.infotext {
+    margin-top: 3vh;
+    font-size: 1.3vw;
+    margin-right: -50%;
+}
+
+.visualisierungpic {
+    scale: 100%;
+}
+
+.ets6picture {
+    scale: 90%;
+    margin-right: 10%;
+}
