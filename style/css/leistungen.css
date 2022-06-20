@@ -8,7 +8,7 @@
   z-index: 1000;
 }
 .header ul {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   top: 22px;
@@ -166,7 +166,6 @@ body {
 }
 
 .infotext {
-  margin-top: 3vh;
   font-size: 1.3vw;
   margin-right: -50%;
 }

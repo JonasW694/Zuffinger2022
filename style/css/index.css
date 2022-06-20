@@ -286,7 +286,7 @@ a.icon-link:hover {
   z-index: 1000;
 }
 .header ul {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   top: 22px;
