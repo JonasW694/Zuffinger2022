@@ -44,7 +44,7 @@ body {
 .slides {
   width: 500vw;
   display: flex;
-  aspect-ratio: 16/8.5;
+  aspect-ratio: 16/9;
   background-color: #52a044;
 }
 
@@ -151,10 +151,6 @@ input[type=radio]:not(:checked), input[type=radio]:checked {
   display: none;
 }
 
-body {
-  background: #eee;
-}
-
 .date__box {
   position: absolute;
   display: flex;
@@ -177,6 +173,8 @@ body {
   width: 90%;
   margin-left: 3%;
   margin-top: 4%;
+  align-items: center;
+  justify-content: center;
 }
 .project-card .date__box {
   opacity: 0;
@@ -224,7 +222,8 @@ body {
 }
 .project-card .project-card__info {
   position: relative;
-  bottom: -35%;
+  margin-top: 18%;
+  margin-left: 1.5%;
   z-index: 10;
   background: white;
   padding: 20px 15px;
@@ -277,6 +276,7 @@ a.icon-link:hover {
 }
 
 .header {
+  top: 0;
   width: 100vw;
   height: 100px;
   background-color: transparent;

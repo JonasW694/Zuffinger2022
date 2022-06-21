@@ -123,12 +123,8 @@ body {
   padding: 0%;
   margin: 0%;
   background-color: #52a044;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .themebox {
@@ -150,30 +146,14 @@ body {
   color: #FFF;
 }
 
-.productpictures {
-  position: relative;
+.flex-container {
+  display: flex;
   justify-content: center;
-  height: 50vh;
-  width: 45vw;
-  margin-top: 20vh;
+  flex-direction: column;
+  align-items: center;
 }
 
-.leistungentext {
-  height: 64vh;
-  width: 25vw;
-  margin-right: 7%;
-  margin-top: 15vh;
-}
-
-.infotext {
-  font-size: 1.3vw;
-  margin-right: -50%;
-}
-
-.visualisierungpic {
-  scale: 100%;
-}
-
-.ets6picture {
-  scale: 90%;
-}/*# sourceMappingURL=leistungen.css.map */
+.kontaktformular {
+  margin-top: 19%;
+  margin-bottom: 19%;
+}/*# sourceMappingURL=Kontakt.css.map */

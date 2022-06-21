@@ -123,12 +123,25 @@ body {
   padding: 0%;
   margin: 0%;
   background-color: #52a044;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.flex-container {
+.impressumtext {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1% 1% 1% 1%;
+  background-color: #fff;
+  margin-bottom: 4.43%;
+  margin-left: 4%;
+  margin-top: 10%;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  font-size: 3vh;
 }
 
 .themebox {
@@ -136,7 +149,7 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  margin-top: 3%;
+  top: 10%;
 }
 
 .themetextbox {
@@ -148,32 +161,4 @@ body {
   width: max-content;
   padding: 10px 15px 10px 15px;
   color: #FFF;
-}
-
-.productpictures {
-  position: relative;
-  justify-content: center;
-  height: 50vh;
-  width: 45vw;
-  margin-top: 20vh;
-}
-
-.leistungentext {
-  height: 64vh;
-  width: 25vw;
-  margin-right: 7%;
-  margin-top: 15vh;
-}
-
-.infotext {
-  font-size: 1.3vw;
-  margin-right: -50%;
-}
-
-.visualisierungpic {
-  scale: 100%;
-}
-
-.ets6picture {
-  scale: 90%;
-}/*# sourceMappingURL=leistungen.css.map */
+}/*# sourceMappingURL=Impressum.css.map */
