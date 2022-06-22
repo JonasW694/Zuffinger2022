@@ -1,6 +1,5 @@
 body {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
-    font-size: 2.2vw;
     padding: 0%;
     margin: 0%;
     background-color: #52a044;
@@ -19,10 +18,11 @@ body {
 .themetextbox {
     display: flex;
     word-wrap: nowrap;
-    border-style: solid;
+    border-style: none;
     width: max-content;
     padding: 10px 15px 10px 15px;
     color: #FFF;
+    font-size: 2.2vw;
 }
 
 .flex-container {
@@ -32,7 +32,56 @@ body {
     align-items: center;
 }
 
+$primary: #52a044;
+$white: #fff;
+$gray: #9b9b9b;
 .kontaktformular {
-    margin-top: 19%;
-    margin-bottom: 19%;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10%;
+    width: 50%;
+    margin-bottom: 9%;
+}
+
+.inputfield {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-top: 2%;
+}
+
+.inputfield:focus {
+    padding-bottom: 6px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $white, $primary);
+    border-image-slice: 1;
+}
+
+.inputfield {
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+}
+
+.sendbutton {
+    background-color: transparent;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    color: #FFF;
+    font-size: 1.3vw;
+    margin-top: 3%;
+    margin-left: 45%;
+    &:hover {
+        background-color: #fff;
+        transition: 0.5s;
+        color: #000;
+    }
 }

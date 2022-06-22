@@ -6,6 +6,23 @@ body {
     overflow-x: hidden;
 }
 
+.themebox {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 3%;
+}
+
+.themetextbox {
+    display: flex;
+    word-wrap: nowrap;
+    border-style: none;
+    padding: 10px 15px 10px 15px;
+    color: #FFF;
+    font-size: 2.2vw;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;

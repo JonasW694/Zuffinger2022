@@ -160,7 +160,7 @@ body {
 .themetextbox {
   display: flex;
   word-wrap: nowrap;
-  border-style: solid;
+  border-style: none;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;

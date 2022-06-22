@@ -119,20 +119,19 @@
 
 body {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 2.2vw;
   padding: 0%;
   margin: 0%;
   background-color: #52a044;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .themebox {
@@ -146,9 +145,10 @@ body {
 .themetextbox {
   display: flex;
   word-wrap: nowrap;
-  border-style: solid;
+  border-style: none;
   padding: 10px 15px 10px 15px;
   color: #FFF;
+  font-size: 2.2vw;
 }
 
 .productpictures {
@@ -159,8 +159,9 @@ body {
   width: min-content;
   align-items: center;
   justify-content: center;
-  width: 90vw;
+  width: 100vw;
   margin-top: 15vh;
+  margin-left: 6%;
 }
 
 .leistungentext {
@@ -170,8 +171,8 @@ body {
   height: fit-content;
   position: relative;
   width: 40%;
-  margin-top: 0%;
-  margin-bottom: 7%;
+  margin-top: 2%;
+  margin-bottom: 9%;
   margin-right: 20%;
 }
 
