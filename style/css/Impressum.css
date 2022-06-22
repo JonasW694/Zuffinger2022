@@ -3,39 +3,28 @@
   width: 100vw;
   height: 100px;
   background-color: transparent;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.6s;
+  justify-content: space-between;
   transition: 0.6s;
   position: fixed;
   z-index: 1000;
 }
-
 .header ul {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   top: 22px;
   text-align: right;
   right: 4%;
 }
-
 .header ul li {
   list-style: none;
 }
-
 .header ul a {
   margin: 0 20px;
-  color: black;
+  color: rgb(0, 0, 0);
   letter-spacing: 2px;
   font-size: 25px;
   font-weight: 500px;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   cursor: pointer;
   text-decoration: none;
@@ -45,35 +34,27 @@
 .header.headerdown {
   height: 60px;
   background-color: #39992d;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerdown ul {
   top: 0;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerdown ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .header.headerup {
   height: 100px;
   background-color: transparent;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerup ul {
   top: 22px;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerup ul li a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .footer-basic {
@@ -143,27 +124,18 @@ body {
   margin: 0%;
   background-color: #52a044;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .impressumtext {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -173,26 +145,19 @@ body {
   margin-bottom: 4.43%;
   margin-top: 12.2%;
   border-radius: 16px;
-  -webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   font-size: 2vh;
 }
 
 .themebox {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: absolute;
   top: 10%;
 }
 
 .themetextbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   word-wrap: nowrap;
   border-style: solid;
@@ -201,5 +166,4 @@ body {
   width: max-content;
   padding: 10px 15px 10px 15px;
   color: #FFF;
-}
-/*# sourceMappingURL=Impressum.css.map */
+}/*# sourceMappingURL=Impressum.css.map */

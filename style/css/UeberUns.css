@@ -3,39 +3,28 @@
   width: 100vw;
   height: 100px;
   background-color: transparent;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.6s;
+  justify-content: space-between;
   transition: 0.6s;
   position: fixed;
   z-index: 1000;
 }
-
 .header ul {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   top: 22px;
   text-align: right;
   right: 4%;
 }
-
 .header ul li {
   list-style: none;
 }
-
 .header ul a {
   margin: 0 20px;
-  color: black;
+  color: rgb(0, 0, 0);
   letter-spacing: 2px;
   font-size: 25px;
   font-weight: 500px;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
   cursor: pointer;
   text-decoration: none;
@@ -45,35 +34,27 @@
 .header.headerdown {
   height: 60px;
   background-color: #39992d;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerdown ul {
   top: 0;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerdown ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .header.headerup {
   height: 100px;
   background-color: transparent;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerup ul {
   top: 22px;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 .header.headerup ul li a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .footer-basic {
@@ -141,28 +122,18 @@ body {
   padding: 0%;
   margin: 0%;
   background-color: #52a044;
+  overflow-x: hidden;
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .card-container {
   margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 100%;
 }
@@ -179,17 +150,13 @@ body {
   left: 50%;
   width: 350px;
   height: 450px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .card .card-image {
   position: absolute;
   top: 0px;
@@ -198,16 +165,12 @@ body {
   height: 100%;
   z-index: 2;
   background-color: #000;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .card:hover img {
   opacity: 0.4;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .card .card-imageFelix {
   position: absolute;
   scale: -500%;
@@ -217,21 +180,16 @@ body {
   height: 100%;
   z-index: 2;
   background-color: #000;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .card:hover img {
   opacity: 0.4;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .card:hover .card-image {
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  -webkit-transition: all .9s;
-  transition: all .9s;
+  transform: translateY(-100px);
+  transition: all 0.9s;
 }
 
 .details {
@@ -244,13 +202,11 @@ body {
   z-index: 1;
   padding: 10px;
 }
-
 .details h2 {
   margin: 30px 0;
   padding: 0;
   text-align: center;
 }
-
 .details h2 .job-title {
   font-size: 1rem;
   line-height: 2.5rem;
@@ -259,12 +215,8 @@ body {
 }
 
 .biografie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -275,7 +227,5 @@ body {
   margin-left: 4%;
   margin-top: 4.48%;
   border-radius: 16px;
-  -webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-}
-/*# sourceMappingURL=UeberUns.css.map */
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}/*# sourceMappingURL=UeberUns.css.map */

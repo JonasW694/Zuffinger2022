@@ -4,12 +4,16 @@ body {
     padding: 0%;
     margin: 0%;
     background-color: #52a044;
+    overflow: hidden;
 }
 
 .flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .themebox {
@@ -24,29 +28,34 @@ body {
     display: flex;
     word-wrap: nowrap;
     border-style: solid;
-    width: max-content;
     padding: 10px 15px 10px 15px;
     color: #FFF;
 }
 
 .productpictures {
     position: relative;
+    height: auto;
+    width: min-content;
+    align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 45vw;
-    margin-top: 20vh;
-}
-
-.leistungentext {
-    height: 64vh;
-    width: 25vw;
-    margin-right: 7%;
+    width: 90vw;
     margin-top: 15vh;
 }
 
+.leistungentext {
+    text-align: center;
+    height: fit-content;
+    position: relative;
+    width: 40%;
+    margin-top: 0%;
+    margin-bottom: 7%;
+    margin-right: 20%;
+}
+
 .infotext {
+    position: absolute;
     font-size: 1.3vw;
-    margin-right: -50%;
+    width: 150%;
 }
 
 .visualisierungpic {
@@ -54,5 +63,6 @@ body {
 }
 
 .ets6picture {
-    scale: 90%;
+    scale: 100%;
+    margin-bottom: 2%;
 }
